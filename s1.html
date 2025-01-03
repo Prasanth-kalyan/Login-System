@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var video = document.getElementById("m");
+      var btn = document.getElementById("bt");
+      btn.addEventListener("click", function() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+          video.pause();
+          btn.innerHTML = "Play";
+        }
+      });
+    });
+  
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cs.css">
+  <title>Sample Image BG</title>
+</head>
+<body>
+  <video autoplay muted loop id="m">
+    <source src="C:\Users\Prasanth\OneDrive\Desktop\web_app\html\248182.mp4" type="video/mp4">
+  </video><div class="a">
+    <marquee direction="right"><h1 id="x">Welcome to My App</h1></marquee>
+  </div>
+  <div class="b">
+  <label style="border: solid 3px;">User name</label><input type="text" id="nn" placeholder="Enter username" > 
+  </div><div class="c">
+  <label style="border: solid 3px;">password</label><input type="int" id="p2" placeholder="enter password"><br>
+
+  </div><button id="n3"onclick="f1()">Submit</button>
+  
+  <button id="bt" onclick="f()">Pause</button>
+  <div class="z">
+    <p id="n11"> </p>
+    <p id="n12"> </p></div>
+    <script type="text/javascript">
+     //function f1(){
+    //let name=document.getElementById("x").innerHTML;
+    // document.getElementById("n11").innerHTML=name;  
+    function f1(){
+    const userInput = document.getElementById("nn").value;
+      document.getElementById("n11").innerText = "Entered Name is: " + userInput;
+    // const userInput = document.getElementById("p2").value;
+    //   document.getElementById("12").innerText = "Entered Password is: " + userInput;
+  }
+  
+    </script>
+    
+  
+
+</body>
+</html>
